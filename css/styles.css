@@ -10,7 +10,7 @@
 body {
     font-family: 'Raleway', sans-serif;
     font-family: 'Roboto', sans-serif;
-    color: #212121;
+    color: var(--title-text-color);
 }
 ul {
     list-style-type: none;
@@ -25,12 +25,17 @@ ul {
 .logo span {
     color: var(--accent-color);
 }
-.site-nav li a, .contact-info li a {
+.link{    
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    text-align: left;
     color: inherit;
     text-decoration: none;
 }
-.site-nav li a:hover, .contact-info li a:hover,
-.site-nav li a:focus, .contact-info li a:focus{
+.link:hover,
+.link:focus{
     color: var(--accent-color);
 }
 .order-service {
@@ -40,7 +45,6 @@ ul {
 .order-service h1 {
     color: var(--primary-white-color);
     font-size: 44px;
-    font-style: normal;
     font-weight: 900;
     line-height: 60px;
     letter-spacing: 0.06em;
@@ -53,7 +57,6 @@ ul {
     padding: 10px 32px;
     font-family: Roboto;
     font-size: 16px;
-    font-style: normal;
     font-weight: 700;
     line-height: 30px;
     letter-spacing: 0.06em;  
@@ -65,34 +68,33 @@ ul {
 }
 .paragraphs h3 {
     font-size: 14px;
-    font-style: normal;
     font-weight: 700;
     line-height: 16px;
     letter-spacing: 0.03em;
     text-align: left;
+    text-transform: uppercase;
 }
 .paragraphs p {
     color: var(--primary-text-color);
     font-size: 14px;
-    font-style: normal;
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.03em;
     text-align: left;  
 }
-.our-work h2 {
-    font-size: 36px;
-    font-style: normal;
+.our-work  {
+    font-size: 36px;    
     font-weight: 700;
     line-height: 42px;
     letter-spacing: 0.03em;
+    text-align: center;
+
 }
 .our-team {
     background-color: var(--primary-bg-color);
     height: 648;
 }
 .our-team h2 {
-    font-style: normal;
     font-size: 36px;
     font-weight: 700;
     line-height: 42px;
@@ -100,7 +102,6 @@ ul {
 }
 .our-team h3 {
     font-size: 16px;
-    font-style: normal;
     font-weight: 500;
     line-height: 19px;
     letter-spacing: 0.03em;
@@ -108,7 +109,6 @@ ul {
 .our-team p {
     color: var(--primary-text-color);
     font-size: 16px;
-    font-style: normal;
     font-weight: 400;
     line-height: 19px;
     letter-spacing: 0.03em;
@@ -120,9 +120,7 @@ ul {
 .contacs-footer a{
     color: var(--primary-white-color);
     text-decoration: none;
-    font-family: Roboto;
     font-size: 14px;
-    font-style: normal;
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.03em;
@@ -149,13 +147,12 @@ text-decoration: none;
 color: var(--title-text-color);    
 }
 
-.button-list li a:hover, button li a:focus {
+.button-list li button:hover, button li button:focus {
     background-color: var(--accent-color);
     color: var(--primary-white-color);
 }
-.main-info {
+.main-info h2{
     font-size: 18px;
-    font-style: normal;
     font-weight: 700;
     line-height: 36px;
     letter-spacing: 0.06em;
@@ -164,7 +161,6 @@ color: var(--title-text-color);
 .main-info p{
 color: var(--primary-text-color);
 font-size: 16px;
-font-style: normal;
 font-weight: 400;
 line-height: 30px;
 letter-spacing: 0.03em;
